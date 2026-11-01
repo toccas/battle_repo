@@ -227,3 +227,6 @@ tools/                           generatore delle unità e test automatici
 In GDScript il tick di combattimento costa 4–9 ms con circa 900 soldati in mischia (misurato su una CPU cloud, a velocità 3x). Il valore è mostrato in alto a destra. Se scende il frame rate quando aumenti gli eserciti, il primo passo è spostare `combat_system.gd` in C# o GDExtension, come previsto dal documento.
 
 Trucco importante già applicato nel codice: in GDScript scrivere `altro_oggetto.array[i] = x` dentro un ciclo copia l'intero array a ogni scrittura. Per questo i sistemi lavorano su copie locali e le riassegnano una volta per reggimento.
+
+Documento di Design
+https://docs.google.com/document/d/1T4Ri2I7LD9N7R9Offo3c_yTaeax3ISnwbhYYRh7eK3w/edit?usp=sharing
