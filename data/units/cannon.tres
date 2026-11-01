@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="UnitStats" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/unit_stats.gd" id="1_08gjy"]
+[ext_resource type="Texture2D" path="res://data/icons/cannon.res" id="1_a0ubc"]
+[ext_resource type="Resource" path="res://data/visuals/cannon/aspetto.tres" id="2_lgei5"]
+
+[resource]
+script = ExtResource("1_08gjy")
+id = "cannon"
+display_name = "Cannoni"
+role = "artillery"
+cost = 1100
+description = "Tiro teso e potentissimo: perfetto contro porte e formazioni compatte. Esplosione stretta, pochi pezzi."
+models = 3
+hp = 300.0
+default_cols = 3
+spacing = 8.0
+row_spacing = 8.0
+radius = 1.6
+model_height = 1.86
+mesh_kind = "cannon"
+tint = Color(1, 1, 1, 1)
+visual = ExtResource("2_lgei5")
+icon = ExtResource("1_a0ubc")
+armor = 10.0
+melee_attack = 8.0
+melee_defense = 5.0
+damage_base = 10.0
+damage_ap = 2.0
+attack_interval = 1.6
+charge_bonus = 10.0
+splash = 1
+has_shield = false
+anti_large = false
+bonus_vs_large = 0.0
+is_large = false
+speed = 2.0
+turn_rate = 0.6
+mass = 3000.0
+leadership = 58.0
+causes_fear = false
+immune_psychology = false
+is_general = false
+is_ranged = true
+missile_range = 260.0
+ammo = 30
+reload_time = 15.0
+missile_damage = 50.0
+missile_ap = 20.0
+is_artillery = true
+splash_radius = 3.0
+gate_damage = 400.0
+high_arc = false
+min_range = 30.0
+wall_mount = true

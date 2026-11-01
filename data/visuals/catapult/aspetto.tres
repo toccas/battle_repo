@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="UnitVisual" load_steps=14 format=3]
+
+[ext_resource type="Texture2D" path="res://data/visuals/catapult/colori.res" id="1_6n3y1"]
+[ext_resource type="Script" path="res://scripts/unit_animation.gd" id="2_4npm3"]
+[ext_resource type="ArrayMesh" path="res://data/visuals/catapult/mesh.res" id="3_sbj6i"]
+[ext_resource type="Script" path="res://scripts/unit_visual.gd" id="4_60fre"]
+[ext_resource type="Texture2D" path="res://data/visuals/catapult/vat_normali.res" id="5_asurc"]
+[ext_resource type="Texture2D" path="res://data/visuals/catapult/vat_posizioni.res" id="6_1wx4y"]
+
+[sub_resource type="Resource" id="Resource_qndvp"]
+script = ExtResource("2_4npm3")
+speed = 1.0
+one_shot = true
+duration = 1.1
+bob = 0.0
+sway_deg = 0.0
+rock_deg = 0.0
+lean_deg = 0.0
+hold_lean = false
+bend_deg = 0.0
+bend_pivot = 1.0
+vat_first_frame = 106
+vat_frame_count = 24
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_gxfie"]
+script = ExtResource("2_4npm3")
+speed = 1.0
+one_shot = true
+duration = 1.6
+bob = 0.0
+sway_deg = 0.0
+rock_deg = 0.0
+lean_deg = 0.0
+hold_lean = true
+bend_deg = 0.0
+bend_pivot = 1.0
+vat_first_frame = 221
+vat_frame_count = 34
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_rroag"]
+script = ExtResource("2_4npm3")
+speed = 1.0
+one_shot = true
+duration = 0.6
+bob = 0.0
+sway_deg = 0.0
+rock_deg = 0.0
+lean_deg = 0.0
+hold_lean = false
+bend_deg = 0.0
+bend_pivot = 1.0
+vat_first_frame = 207
+vat_frame_count = 14
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_ipv76"]
+script = ExtResource("2_4npm3")
+speed = 1.0
+one_shot = false
+duration = 3.0
+bob = 0.0
+sway_deg = 0.0
+rock_deg = 0.0
+lean_deg = 0.0
+hold_lean = false
+bend_deg = 0.0
+bend_pivot = 1.0
+vat_first_frame = 0
+vat_frame_count = 61
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_o6iy6"]
+script = ExtResource("2_4npm3")
+speed = 1.0
+one_shot = false
+duration = 0.9
+bob = 0.0
+sway_deg = 0.0
+rock_deg = 0.0
+lean_deg = 0.0
+hold_lean = false
+bend_deg = 0.0
+bend_pivot = 1.0
+vat_first_frame = 87
+vat_frame_count = 19
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_gc7b5"]
+script = ExtResource("2_4npm3")
+speed = 1.0
+one_shot = true
+duration = 3.8
+bob = 0.0
+sway_deg = 0.0
+rock_deg = 0.0
+lean_deg = 0.0
+hold_lean = false
+bend_deg = 0.0
+bend_pivot = 1.0
+vat_first_frame = 130
+vat_frame_count = 77
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_uou4c"]
+script = ExtResource("2_4npm3")
+speed = 1.0
+one_shot = false
+duration = 1.2
+bob = 0.0
+sway_deg = 0.0
+rock_deg = 0.0
+lean_deg = 0.0
+hold_lean = false
+bend_deg = 0.0
+bend_pivot = 1.0
+vat_first_frame = 61
+vat_frame_count = 26
+vat_fps = 20.0
+
+[resource]
+script = ExtResource("4_60fre")
+mesh = ExtResource("3_sbj6i")
+albedo_texture = ExtResource("1_6n3y1")
+pixel_texture = true
+team_color_strength = 0.45
+model_scale = 1.0
+model_yaw_deg = 0.0
+model_offset = Vector3(0, 0, 0)
+idle = SubResource("Resource_ipv76")
+walk = SubResource("Resource_uou4c")
+run = SubResource("Resource_o6iy6")
+attack = SubResource("Resource_qndvp")
+shoot = SubResource("Resource_gc7b5")
+hit = SubResource("Resource_rroag")
+death = SubResource("Resource_gxfie")
+vat_positions = ExtResource("6_1wx4y")
+vat_normals = ExtResource("5_asurc")
+vat_rows_per_frame = 3

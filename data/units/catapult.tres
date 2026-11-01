@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="UnitStats" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/unit_stats.gd" id="1_33tro"]
+[ext_resource type="Texture2D" path="res://data/icons/catapult.res" id="1_ieuuw"]
+[ext_resource type="Resource" path="res://data/visuals/catapult/aspetto.tres" id="2_acm5u"]
+
+[resource]
+script = ExtResource("1_33tro")
+id = "catapult"
+display_name = "Catapulte"
+role = "artillery"
+cost = 900
+description = "Lancia massi a parabola oltre le mura: colpisce aree larghe e sfonda le porte. Lenta e indifesa da vicino."
+models = 4
+hp = 260.0
+default_cols = 4
+spacing = 7.0
+row_spacing = 7.0
+radius = 1.8
+model_height = 2.4
+mesh_kind = "catapult"
+tint = Color(1, 1, 1, 1)
+visual = ExtResource("2_acm5u")
+icon = ExtResource("1_ieuuw")
+armor = 0.0
+melee_attack = 8.0
+melee_defense = 5.0
+damage_base = 10.0
+damage_ap = 2.0
+attack_interval = 1.6
+charge_bonus = 10.0
+splash = 1
+has_shield = false
+anti_large = false
+bonus_vs_large = 0.0
+is_large = false
+speed = 2.2
+turn_rate = 0.6
+mass = 3000.0
+leadership = 58.0
+causes_fear = false
+immune_psychology = false
+is_general = false
+is_ranged = true
+missile_range = 300.0
+ammo = 25
+reload_time = 16.0
+missile_damage = 40.0
+missile_ap = 10.0
+is_artillery = true
+splash_radius = 4.5
+gate_damage = 260.0
+high_arc = true
+min_range = 60.0
+wall_mount = false

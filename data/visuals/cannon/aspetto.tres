@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="UnitVisual" format=3 uid="uid://ca5ljehpw1pom"]
+
+[ext_resource type="Texture2D" path="res://data/visuals/cannon/colori.res" id="1_xtvuo"]
+[ext_resource type="Script" uid="uid://dd7n4fwnq3emh" path="res://scripts/unit_animation.gd" id="2_sg7rj"]
+[ext_resource type="ArrayMesh" path="res://data/visuals/cannon/mesh.res" id="3_80l0v"]
+[ext_resource type="Script" uid="uid://bc2tnci0c0kco" path="res://scripts/unit_visual.gd" id="4_h0tgx"]
+[ext_resource type="Texture2D" path="res://data/visuals/cannon/vat_normali.res" id="5_tfkti"]
+[ext_resource type="Texture2D" path="res://data/visuals/cannon/vat_posizioni.res" id="6_uirr1"]
+
+[sub_resource type="Resource" id="Resource_ejxgf"]
+script = ExtResource("2_sg7rj")
+one_shot = true
+duration = 1.1
+vat_first_frame = 111
+vat_frame_count = 24
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_uyq7h"]
+script = ExtResource("2_sg7rj")
+one_shot = true
+duration = 1.6
+hold_lean = true
+vat_first_frame = 234
+vat_frame_count = 34
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_kyovt"]
+script = ExtResource("2_sg7rj")
+one_shot = true
+vat_first_frame = 220
+vat_frame_count = 14
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_wcjiy"]
+script = ExtResource("2_sg7rj")
+duration = 3.2
+vat_frame_count = 66
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_m5042"]
+script = ExtResource("2_sg7rj")
+duration = 0.85
+vat_first_frame = 92
+vat_frame_count = 19
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_sm4uk"]
+script = ExtResource("2_sg7rj")
+one_shot = true
+duration = 4.2
+vat_first_frame = 135
+vat_frame_count = 85
+vat_fps = 20.0
+
+[sub_resource type="Resource" id="Resource_3m2nl"]
+script = ExtResource("2_sg7rj")
+duration = 1.2
+vat_first_frame = 66
+vat_frame_count = 26
+vat_fps = 20.0
+
+[resource]
+script = ExtResource("4_h0tgx")
+mesh = ExtResource("3_80l0v")
+albedo_texture = ExtResource("1_xtvuo")
+pixel_texture = true
+team_color_strength = 0.45
+idle = SubResource("Resource_wcjiy")
+walk = SubResource("Resource_3m2nl")
+run = SubResource("Resource_m5042")
+attack = SubResource("Resource_ejxgf")
+shoot = SubResource("Resource_sm4uk")
+hit = SubResource("Resource_kyovt")
+death = SubResource("Resource_uyq7h")
+vat_positions = ExtResource("6_uirr1")
+vat_normals = ExtResource("5_tfkti")
+vat_rows_per_frame = 4

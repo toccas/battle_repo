@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="UnitStats" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/unit_stats.gd" id="1_6pops"]
+[ext_resource type="Texture2D" path="res://data/icons/knights.res" id="1_pxehu"]
+[ext_resource type="Resource" path="res://data/visuals/knight/aspetto.tres" id="2_kgwur"]
+
+[resource]
+script = ExtResource("1_6pops")
+id = "knights"
+display_name = "Cavalieri"
+role = "cavalry"
+cost = 900
+description = "Cavalleria pesante: cariche devastanti ai fianchi e alle spalle."
+models = 30
+hp = 48.0
+default_cols = 10
+spacing = 2.4
+row_spacing = 3.4
+radius = 0.9
+model_height = 2.6
+mesh_kind = "cavalry"
+tint = Color(0.9, 0.9, 1, 1)
+visual = ExtResource("2_kgwur")
+icon = ExtResource("1_pxehu")
+armor = 60.0
+melee_attack = 32.0
+melee_defense = 22.0
+damage_base = 24.0
+damage_ap = 10.0
+attack_interval = 1.6
+charge_bonus = 45.0
+splash = 1
+has_shield = false
+anti_large = false
+bonus_vs_large = 0.0
+is_large = true
+speed = 9.0
+turn_rate = 1.2
+mass = 500.0
+leadership = 65.0
+causes_fear = false
+immune_psychology = false
+is_general = false
+is_ranged = false
+missile_range = 140.0
+ammo = 15
+reload_time = 7.0
+missile_damage = 12.0
+missile_ap = 4.0
+is_artillery = false
+splash_radius = 0.0
+gate_damage = 0.0
+high_arc = true
+min_range = 0.0
+wall_mount = false
